@@ -2,8 +2,6 @@ source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.1.3"
-# The modern asset pipeline for Rails [https://github.com/rails/propshaft]
-gem "propshaft"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
@@ -52,9 +50,24 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # Rspect
+  gem 'rspec-rails', '~> 8.0.0'
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
+
+# FrontEnd
+gem "sprockets-rails"
+gem "sassc-rails"
+gem "bootstrap", "~> 5.3"
+gem "autoprefixer-rails"
+gem "font-awesome-sass", "~> 6.1"
+gem "simple_form"
+
+# Authentification
+
+gem "devise"
