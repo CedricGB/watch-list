@@ -8,3 +8,13 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+@import "bootstrap";
+
+body {
+  background-color: antiquewhite;
+}
+/* NAVBAR */
+
+nav {
+  background-color: lightgray;
+}
