@@ -1,0 +1,7 @@
+<% @movies.each do |movie| %>
+<div class="d-flex flex-column">
+  <h2><%= link_to movie.title , movie_path(movie) %> </h2>
+  <img src="<%= movie.poster_url%>" alt="<%= movie.title %>"/>
+</div>
+
+<% end %>
