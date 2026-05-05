@@ -71,3 +71,6 @@ gem "simple_form"
 # Authentification
 
 gem "devise"
+
+# Seed
+gem "faker"
